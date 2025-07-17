@@ -1,179 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>Safhe Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&amp;display=swap'><link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>پاتوق گرافیک نوجوان صفحه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- کتابخانه‌های خارجی -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&amp;display=swap'>
+    <script src='https://unpkg.com/@phosphor-icons/web'></script>
 
+    <!-- کدهای CSS -->
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #F5EEDD; /* رنگ پس‌زمینه جدید */
+            color: #333333; /* رنگ متن اصلی */
+        }
+        
+        .button-style {
+            background-color: #077A7D; /* رنگ دکمه‌های پیام‌رسان‌ها */
+            color: #ffffff;
+            transition: all 0.2s ease-in-out;
+            box-shadow: none;
+        }
+        .button-style:hover {
+            background-color: #056366; /* رنگ هاور کمی تیره‌تر */
+            transform: translateY(-2px);
+        }
+
+        .map-button {
+            background-color: #06202B; /* رنگ دکمه نقشه */
+            color: #ffffff;
+        }
+        .map-button:hover {
+            background-color: #04151D; /* رنگ هاور کمی تیره‌تر */
+        }
+    </style>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="container mx-auto p-4 flex flex-col items-center justify-center min-h-screen">
+<body class="min-h-screen">
 
+    <div class="max-w-xl mx-auto bg-[#F5EEDD]">
         
+        <!-- بخش کاور و پروفایل -->
+        <header class="relative mb-20">
+            <!-- کاور رنگی -->
+            <div class="w-full h-28" style="background-color: #077A7D;"></div>
 
-    <main class="w-full max-w-md mx-auto text-center py-12">
-
-        
-
-        <!-- بخش پروفایل -->
-
-        <header class="flex flex-col items-center mb-8">
-
-            <img src="https://iili.io/Fcmf6GV.md.jpg"
-
-                alt="عکس پروفایل" 
-
-                class="w-32 h-32 rounded-full object-cover border-4 border-white mb-4"
-
-                onerror="this.onerror=null;this.src='https://placehold.co/128x128/cccccc/ffffff?text=Error';"
-
-            >
-
-            <!-- سایز بزرگ -->
-
-            <h1 class="text-2xl font-bold text-teal-900">صفحه | پاتوق گرافیک نوجوان</h1>
-
-            
-
-            <!-- سایز متوسط -->
-
-            <p class="mt-4 text-xl font-bold text-teal-800">صفحه‌ای برای یادگیری، خلق، حرکت... 🌱</p>
-
-            
-
-            <!-- سایز کوچک -->
-
-            <p class="mt-4 text-base font-bold text-teal-700 px-4 leading-relaxed">
-
-                یه جای دنج برای اونایی که عاشق طراحی هستن و دغدغه‌ دارن. 😍
-
-                <br>
-
-                این صفحه پر از سطرهای پرماجراست:
-
-                <br>
-
-                پوستر، تایپوگرافی، نقاشی، تصویرسازی، هویت بصری و کتیبه...
-
-                <br>
-
-                قراره کنار هم یاد بگیریم و خلق کنیم. 😉
-
-            </p>
-
+            <!-- عکس پروفایل با لینک جدید -->
+            <div class="absolute top-12 left-1/2 -translate-x-1/2 w-32 h-32 p-1 bg-[#F5EEDD] rounded-full">
+                <img 
+                    src="https://i.ibb.co/HLGFZYb6/IMG-20250705-123452.jpg"
+                    alt="عکس پروفایل پاتوق گرافیک نوجوان" 
+                    class="w-full h-full rounded-full object-cover"
+                    onerror="this.onerror=null;this.src='https://placehold.co/128x128/cccccc/ffffff?text=Error';"
+                >
+            </div>
         </header>
 
-        <!-- بخش لینک‌ها -->
+        <!-- بخش اصلی محتوا -->
+        <main class="px-6 pb-12 text-center">
+            
+            <!-- اطلاعات کاربری -->
+            <section class="mb-8 pt-4">
+                <h1 class="text-2xl font-bold text-black">پاتوق گرافیک نوجوان صفحه</h1>
+                <p class="mt-4 text-lg font-bold">صفحه‌ای برای یادگیری، خلق، حرکت... 🌱</p>
+                <p class="mt-4 text-base font-bold px-4 leading-relaxed">
+                    یه جای دنج برای اونایی که عاشق طراحی هستن و دغدغه‌ دارن. 😍
+                    <br>
+                    این صفحه پر از سطرهای پرماجراست:
+                    <br>
+                    پوستر، تایپوگرافی، نقاشی، تصویرسازی، هویت بصری و کتیبه...
+                    <br>
+                    قراره کنار هم یاد بگیریم و خلق کنیم. 😉
+                </p>
+            </section>
 
-        <section class="w-full mb-12">
-
-            <!-- سایز متوسط -->
-
-            <h2 class="text-xl font-bold text-teal-900 mb-6">صفحات‌مجازی‌مون</h2>
-
-            <div class="space-y-4">
-
-                <!-- سایز کوچک -->
-
-                <a href="https://ble.ir/Safhe_design" target="_blank" class="block w-full glass-halo text-teal-800 hover:text-green-600 text-base font-bold py-4 px-6 rounded-xl">
-
-                    بله
-
-                </a>
-
-                <a href="https://eitaa.com/Safhe_design" target="_blank" class="block w-full glass-halo text-teal-800 hover:text-orange-500 text-base font-bold py-4 px-6 rounded-xl">
-
-                    ایتا
-
-                </a>
-
-                <a href="https://t.me/Safhe_design" target="_blank" class="block w-full glass-halo text-teal-800 hover:text-sky-500 text-base font-bold py-4 px-6 rounded-xl">
-
-                    تلگرام
-
-                </a>
-
-                <a href="https://instagram.com/safhe_design" target="_blank" class="block w-full glass-halo text-teal-800 hover:text-pink-500 text-base font-bold py-4 px-6 rounded-xl">
-
-                    اینستاگرام
-
-                </a>
-
-            </div>
-
-        </section>
-
-        <!-- بخش آخرین رویدادها (اسلایدر) -->
-
-        <section class="w-full mb-12">
-
-            <!-- سایز متوسط -->
-
-            <h2 class="text-xl font-bold text-teal-900 mb-6">آخرین رویدادها</h2>
-
-            <div class="relative">
-
-                <div id="slider" class="slider-container flex overflow-x-auto snap-x snap-mandatory rounded-xl">
-
-                    <img src="https://iili.io/FcmU57a.md.jpg" alt="رویداد ۱" class="slider-item w-full flex-shrink-0 snap-center object-cover">
-
-                    <img src="https://iili.io/FcmaWJa.md.jpg" alt="رویداد ۲" class="slider-item w-full flex-shrink-0 snap-center object-cover">
-
-                    <img src="https://iili.io/Fcp2vnV.md.jpg" alt="رویداد ۳" class="slider-item w-full flex-shrink-0 snap-center object-cover">
-
-                    <img src="https://iili.io/FcyuZga.md.jpg" alt="رویداد ۴" class="slider-item w-full flex-shrink-0 snap-center object-cover">
-
-                    <img src="https://iili.io/FcylXMQ.md.jpg" alt="رویداد ۵" class="slider-item w-full flex-shrink-0 snap-center object-cover">
-
+            <!-- بخش لینک‌ها -->
+            <section class="w-full mb-12">
+                <h2 class="text-xl font-bold text-black mb-6">صفحات‌مجازی‌مون</h2>
+                <div class="space-y-4">
+                    <a href="https://instagram.com/safhe_design" target="_blank" class="block w-full button-style text-base font-bold py-4 px-6 rounded-full">
+                        اینستاگرام
+                    </a>
+                    <a href="https://t.me/Safhe_design" target="_blank" class="block w-full button-style text-base font-bold py-4 px-6 rounded-full">
+                        تلگرام
+                    </a>
+                    <a href="https://ble.ir/Safhe_design" target="_blank" class="block w-full button-style text-base font-bold py-4 px-6 rounded-full">
+                        بله
+                    </a>
+                    <a href="https://eitaa.com/Safhe_design" target="_blank" class="block w-full button-style text-base font-bold py-4 px-6 rounded-full">
+                        ایتا
+                    </a>
                 </div>
+            </section>
 
-                <button id="prevBtn" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/60 backdrop-blur-sm rounded-full p-2 text-orange-600 hover:bg-white/80 transition">
-
-                    <i class="ph ph-caret-left text-2xl"></i>
-
-                </button>
-
-                <button id="nextBtn" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/60 backdrop-blur-sm rounded-full p-2 text-orange-600 hover:bg-white/80 transition">
-
-                    <i class="ph ph-caret-right text-2xl"></i>
-
-                </button>
-
-            </div>
-
-        </section>
-
-        <!-- بخش موقعیت مکانی -->
-
-        <footer class="w-full">
-
-             <!-- سایز متوسط -->
-
-             <h2 class="text-xl font-bold text-teal-900 mb-4">آدرس‌مون</h2>
-
-             <div class="flex flex-col items-center glass-halo p-6 rounded-xl">
-
-                 <i class="ph-bold ph-map-pin-line text-4xl text-orange-500 mb-3"></i>
-
-                 <!-- سایز کوچک -->
-
-                 <p class="text-base font-bold text-teal-800">
-
-                    بلوار فرصت شیرازی (پودونک)، خیابان استاد شهریار،‌ تقاطع اقبال لاهوری، پردیس هنر و اندیشه ره‌آوین (فرهنگسرای رسانه)
-
-                 </p>
-
-             </div>
-
-        </footer>
-
-    </main>
-
-</div>
-<!-- partial -->
-  <script src='https://cdn.tailwindcss.com'></script>
-<script src='https://unpkg.com/@phosphor-icons/web'></script><script  src="./script.js"></script>
+            <!-- بخش موقعیت مکانی -->
+            <footer class="w-full mb-12">
+                <h2 class="text-xl font-bold text-black mb-4">نشونی‌مون</h2>
+                <div class="space-y-4 text-center">
+                    <p class="text-base font-bold px-4 leading-relaxed">خیابان لطفعلی‌خان زند، حدفاصل چهارراه خیرات و سه‌راه انوری، حوزه هنری فارس، اتاق امید.</p>
+                    <a href="https://nshn.ir/3b7bg415VF7mrv" target="_blank" class="inline-block map-button text-base font-bold py-2 px-5 rounded-full">
+                        مشاهده در نقشه
+                    </a>
+                </div>
+            </footer>
+        </main>
+    </div>
 
 </body>
-  </html>
+</html>
